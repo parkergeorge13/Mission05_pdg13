@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewData["Title"]</title>
+    <!-- Add favicon to website -->
+    <link rel="icon" type="image/x-icon" href="img/pg4.png" />
+    <link href="~/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/css/styles.css" rel="stylesheet" />
+    <link href="~/css/default.css" rel="stylesheet" />
+</head>
+<body>
+    <!-- Bootstrap css navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark" id="mainNav">
+        <div class="pg-nav">
+            <div class="container">
+                <div class="column">
+                    <a asp-controller="Blah" asp-action="Index" class="navbar-brand"><h2>Parker George</h2></a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ms-1"></i>
+                </button>
+                <!-- Nav bar to take to grade calculator -->
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a asp-controller="Blah" asp-action="GradeCalc" class="nav-link">Grade Calculator</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="pg-body">
+        @RenderBody()
+    </div>
+
+    <script src="~/lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="~/lib/jquery/jquery-3.6.3.min.js"></script>
+    <script src="~/js/Grade.js"></script>
+
+</body>
+</html>

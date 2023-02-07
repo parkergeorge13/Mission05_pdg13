@@ -1,0 +1,43 @@
+﻿body {
+    background-image: url('file:///C:\Users\parke\source\repos\Mission04_pdg13\Mission04_pdg13\wwwroot\img\GrainyBackground.png');
+}
+
+.pg-nav {
+    background-color: lightblue;
+    width: 100%;
+    margin-top: 0px;
+}
+
+.pg-body {
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 100px;
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    border-radius: 8px;
+}
+h1, h3, p, label, li {
+    text-align: center;
+}
+.pg-text-centered {
+    text-align: center;
+}
+.column {
+    float: left;
+    width: 50%;
+}
+.row {
+    content: "";
+    display: table;
+    clear: both;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+ol {
+    list-style-position: inside;
+}
